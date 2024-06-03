@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infračervený spektrometr</title>
+    <link rel="stylesheet" href="room3.css">
+    <script src="room4.js" defer></script>
+</head>
+<body>
+    <div class="room-container">
+        <h1>Infračervený spektrometr</h1>
+        <p>Do jaké chemické skupiny chlor patří?</p>
+        <div class="button-container">
+            <button onclick="checkAnswer(this, 'wrong')">Halogenidy</button>
+            <button onclick="checkAnswer(this, 'wrong')">Alkalické kovy</button>
+            <button onclick="checkAnswer(this,'wrong')">Chalkogenidy</button>
+            <button onclick="checkAnswer(this, 'correct')">Halogeny</button>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="menuButton" class="hidden" onclick="location.href='index.html'">Return to Menu</button>
+    </div>
+</body>
+</html>

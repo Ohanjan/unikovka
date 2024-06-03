@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Východ</title>
+    <link rel="stylesheet" href="vychod.css">
+    <script src="vychod.js" defer></script>
+</head>
+<body>
+    <div class="room-container">
+        <h1>Východ</h1>
+        <p>Vložte klíč abyste opustili laboratoř.</p>
+        <input type="text" id="keyInput" placeholder="Vložte klíč:">
+        <button onclick="checkKey()">Vyzkoušet klíč</button>
+        <div id="result" class="result"></div>
+        <button id="menuButton" class="hidden" onclick="location.href='index.html'">Zpět na menu</button>
+    </div>
+
+    <!-- Wrong Key Modal -->
+    <div id="wrongKeyModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Špatný klíč</h2>
+            <p>Klíč je nesprávný, zkuste to znovu.</p>
+            <button onclick="closeModal()">OK</button>
+        </div>
+    </div>
+</body>
+</html>

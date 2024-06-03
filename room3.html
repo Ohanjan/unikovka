@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referenční vzorek</title>
+    <link rel="stylesheet" href="room3.css">
+    <script src="room3.js" defer></script>
+</head>
+<body>
+    <div class="room-container">
+        <h1>Referenční vzorek</h1>
+        <p>Jak se jmenuje nejrozšířenější minerál chloru?</p>
+        <div class="button-container">
+            <button onclick="checkAnswer(this, 'wrong')">Sylvin</button>
+            <button onclick="checkAnswer(this, 'correct')">Halit</button>
+            <button onclick="checkAnswer(this, 'wrong')">Kuchyňská sůl</button>
+            <button onclick="checkAnswer(this, 'wrong')">Sylvit</button>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="menuButton" class="hidden" onclick="location.href='index.html'">Zpět na menu</button>
+    </div>
+</body>
+</html>

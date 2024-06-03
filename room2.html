@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoelektronový spektrometr</title>
+    <link rel="stylesheet" href="room2.css">
+    <script src="room2.js" defer></script>
+</head>
+<body>
+    <div class="room-container">
+        <h1>Fotoelektronový spektrometr</h1>
+        <p>Jaká je elektronová konfigurace chloru?</p>
+        <div class="button-container">
+            <button onclick="checkAnswer(this, 'correct')">[Ne]: 3s2 3p5</button>
+            <button onclick="checkAnswer(this, 'wrong')">[Ne]: 2s2 3p5</button>
+            <button onclick="checkAnswer(this, 'wrong')">[Ne]: 2s3 3p5</button>
+            <button onclick="checkAnswer(this, 'wrong')">[Ne]: 3s2 3p3</button>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="menuButton" class="hidden" onclick="location.href='index.html'">Zpět na menu</button>
+    </div>
+</body>
+</html>

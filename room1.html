@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plynová maska</title>
+    <link rel="stylesheet" href="room1.css">
+    <script src="room1.js" defer></script>
+</head>
+<body>
+    <div class="room-container">
+        <h1>Plynová maska</h1>
+        <p>Jaké je skupenství čistého chloru?</p>
+        <div class="button-container">
+            <button onclick="checkAnswer(this, 'wrong')">Pevné</button>
+            <button onclick="checkAnswer(this, 'wrong')">Kapalné</button>
+            <button onclick="checkAnswer(this, 'correct')">Plynné</button>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="menuButton" class="hidden" onclick="location.href='index.html'">Zpět na menu</button>
+    </div>
+</body>
+</html>
